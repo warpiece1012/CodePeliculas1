@@ -1,0 +1,68 @@
+body{
+    background-image: url('../img/fondo.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+body{
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.titulo{
+    color: #e50914;
+}
+.formulario{
+    
+    width: 100%;
+    max-width: 420px;
+    height: 100%;
+    max-height: 920px;
+    padding: 15px;
+    margin: auto;
+    background-color: RGBA(0,0,0,0.9);
+}
+.formulario-label {
+      position: relative;
+      margin-bottom: 1rem;
+}
+.formulario-label > input, .formulario-label  > label{
+    height: 3rem;
+    padding: .75rem;
+}
+.formulario-label >label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    pointer-events: none;
+    cursor: text;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}
+.formulario-label  input:not(:placeholder-shown){
+    padding-top: 1.25rem;
+    padding-bottom: .25rem;
+}
+.formulario-label  input:not(:placeholder-shown) ~ label{
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 12px;
+    color: #e50914;
+}
+input[type]:focus{
+    border-color: #e50914;
+    box-shadow: 10px 10px 10px #e50914;
+}
+@media screen and (max-width:640px){
+    .titulo{
+        display: none;
+    }
+    .formulario{
+        max-height: 720px;
+    }
+}
